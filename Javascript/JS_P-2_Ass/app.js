@@ -59,12 +59,14 @@
 // ** Important Question for logic building
 //! WAP to check if  2 number have the same last digit.  Eg: 32 and 47852 have same last digit i.e 2.
 
-let num1 = 324;
-let num2 = 47852;
+// let num1 = 3242;
+// let num2 = 47852;
 
-//! imp concept
-if((num1 % 10) == (num2 % 10)){
-    console.log("Numbers have the same last digit which is", num1 % 10);
-}else{
-    console.log("numbers don't have the same last digit ");
-}
+// //! imp concept
+// if((num1 % 10) == (num2 % 10)){
+//     console.log("Numbers have the same last digit which is", num1 % 10);
+// }else{
+//     console.log("numbers don't have the same last digit ");
+// }
+
+//! ========================================================
