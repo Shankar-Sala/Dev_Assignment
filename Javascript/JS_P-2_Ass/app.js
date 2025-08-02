@@ -42,15 +42,29 @@
 
 //! ================================================================
 
-//? Qs_5. 
-let A = 20;
-let B = 3;
-let C = 4;
+// //? Qs_5. 
+// let A = 20;
+// let B = 3;
+// let C = 4;
 
-if (A > B && A > C) {
-    console.log("A is the Largest Number : ", A);
-} else if (B > C){
-    console.log("B is the Largest Number : ", B);
+// if (A > B && A > C) {
+//     console.log("A is the Largest Number : ", A);
+// } else if (B > C){
+//     console.log("B is the Largest Number : ", B);
+// }else{
+//     console.log("C is the Largest Number : ", C);
+// }
+
+// ? Qs_6 (Bonus)
+// ** Important Question for logic building
+//! WAP to check if  2 number have the same last digit.  Eg: 32 and 47852 have same last digit i.e 2.
+
+let num1 = 324;
+let num2 = 47852;
+
+//! imp concept
+if((num1 % 10) == (num2 % 10)){
+    console.log("Numbers have the same last digit which is", num1 % 10);
 }else{
-    console.log("C is the Largest Number : ", C);
+    console.log("numbers don't have the same last digit ");
 }
