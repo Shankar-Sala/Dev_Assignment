@@ -31,11 +31,26 @@
 
 //! ================================================================
 
-//? Qs_4. 
-let fruits = "algorithm";  
+// //? Qs_4. 
+// let fruits = "algorithm";  
 
-if ((fruits[0] == "A" || fruits[0] == "a") && (fruits.length > 5)) {
-    console.log("It is a Golden String");
-} else {
-    console.log("It is not a Golden String");
+// if ((fruits[0] == "A" || fruits[0] == "a") && (fruits.length > 5)) {
+//     console.log("It is a Golden String");
+// } else {
+//     console.log("It is not a Golden String");
+// }
+
+//! ================================================================
+
+//? Qs_5. 
+let A = 20;
+let B = 3;
+let C = 4;
+
+if (A > B && A > C) {
+    console.log("A is the Largest Number : ", A);
+} else if (B > C){
+    console.log("B is the Largest Number : ", B);
+}else{
+    console.log("C is the Largest Number : ", C);
 }
