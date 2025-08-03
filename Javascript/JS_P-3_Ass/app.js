@@ -33,6 +33,16 @@
 // }
 
 // ? Qs_5
-let str  = prompt("please enter a string");
-console.log(`original string= ${str}`);
-console.log(`string without spaces=${str.trim()}`);
+// let str  = prompt("please enter a string");
+// console.log(`original string= ${str}`);
+// console.log(`string without spaces=${str.trim()}`);
+
+//? Qs_6
+let arr = ["hello", "a", 23, 64,99 , -6];
+let item = 4;
+
+if(arr.indexOf(item) != -1){
+    console.log("Element exists in array");
+}else{
+    console.log("Element doesn't exist in array");
+}
