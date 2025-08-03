@@ -6,8 +6,18 @@
 // console.log(ans);
 
 // ? Qs_2 to get the last n elements
-let n = 3;
-let num = [7, 9, 0, -2];
-let newNum = num.reverse().slice(0,n).reverse();  //  method-1 //shankar
-// let newNum = num.slice(num.length-n);
-console.log(newNum);
+// let n = 3;
+// let num = [7, 9, 0, -2];
+// let newNum = num.reverse().slice(0,n).reverse();  //  method-1 //shankar
+// let newNum = num.slice(num.length-n); method-2
+// console.log(newNum);
+
+// ? Qs_3
+
+let str = prompt("please enter a string");
+
+if(str.length == 0){
+    console.log("String is empty");
+}else{
+    console.log("String is not empty");
+}
