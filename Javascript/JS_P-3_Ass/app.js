@@ -23,11 +23,16 @@
 // }
 
 // ? Qs_4
-let char = "ShAnkaR";
-let chIdx = 3;
+// let char = "ShAnkaR";
+// let chIdx = 3;
 
-if(char[chIdx] == char[idx].toLocaleLowerCase()){
-    console.log("charater is lowercase");
-}else{
-    console.log("character is not lowercase");
-}
+// if(char[chIdx] == char[chIdx].toLowerCase()){
+//     console.log("charater is lowercase");
+// }else{
+//     console.log("character is not lowercase");
+// }
+
+// ? Qs_5
+let str  = prompt("please enter a string");
+console.log(`original string= ${str}`);
+console.log(`string without spaces=${str.trim()}`);
