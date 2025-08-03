@@ -26,7 +26,7 @@
 
 // let Replace = str.replace("Love","Do");
 
-//! 3) Repeat method
-let str = "ILoveCoding";
+// //! 3) Repeat method
+// let str = "ILoveCoding";
 
-let Repeat = str.repeat(3);
+// let Repeat = str.repeat(3);
