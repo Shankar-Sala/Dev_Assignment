@@ -14,10 +14,20 @@
 
 // ? Qs_3
 
-let str = prompt("please enter a string");
+// let str = prompt("please enter a string");
 
-if(str.length == 0){
-    console.log("String is empty");
+// if(str.length == 0){
+//     console.log("String is empty");
+// }else{
+//     console.log("String is not empty");
+// }
+
+// ? Qs_4
+let char = "ShAnkaR";
+let chIdx = 3;
+
+if(char[chIdx] == char[idx].toLocaleLowerCase()){
+    console.log("charater is lowercase");
 }else{
-    console.log("String is not empty");
+    console.log("character is not lowercase");
 }
