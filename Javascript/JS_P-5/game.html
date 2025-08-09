@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Guessing Game</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+    }
+
+    .game-container {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      padding: 0.6rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #f5576c;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f1f1f1;
+    }
+
+    .message {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .success {
+      color: #00ff8c;
+    }
+
+    .error {
+      color: #ffe600;
+    }
+
+    .quit {
+      color: #ff4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Guess the Number</h1>
+
+    <div id="setup">
+      <p>Enter the max number:</p>
+      <input type="number" id="maxInput" placeholder="e.g. 50" min="1"/>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game" style="display: none;">
+      <p>Guess a number between <span id="min">1</span> and <span id="max"></span>:</p>
+      <input type="number" id="guessInput" placeholder="Your guess"/>
+      <button onclick="makeGuess()">Guess</button>
+      <button onclick="quitGame()">Quit</button>
+      <div class="message" id="message"></div>
+    </div>
+  </div>
+
+  <script>
+    let randomNum;
+    let maxNum;
+
+    function startGame() {
+      const maxInput = document.getElementById('maxInput');
+      const max = parseInt(maxInput.value);
+
+      if (isNaN(max) || max <= 0) {
+        alert("Please enter a valid number greater than 0.");
+        return;
+      }
+
+      maxNum = max;
+      randomNum = Math.floor(Math.random() * max) + 1;
+      document.getElementById('max').innerText = maxNum;
+      document.getElementById('setup').style.display = 'none';
+      document.getElementById('game').style.display = 'block';
+    }
+
+    function makeGuess() {
+      const guessInput = document.getElementById('guessInput');
+      const guess = parseInt(guessInput.value);
+      const message = document.getElementById('message');
+
+      if (isNaN(guess)) {
+        message.innerText = "🚫 Please enter a valid number!";
+        message.className = "message error";
+        return;
+      }
+
+      if (guess === randomNum) {
+        message.innerText = `🎉 You got it right! The number was ${randomNum}`;
+        message.className = "message success";
+      } else if (guess < randomNum) {
+        message.innerText = "📉 Too low! Try again.";
+        message.className = "message error";
+      } else {
+        message.innerText = "📈 Too high! Try again.";
+        message.className = "message error";
+      }
+
+      guessInput.value = "";
+    }
+
+    function quitGame() {
+      const message = document.getElementById('message');
+      message.innerText = "👋 You quit the game.";
+      message.className = "message quit";
+      document.getElementById('guessInput').disabled = true;
+    }
+  </script>
+</body>
+</html>
