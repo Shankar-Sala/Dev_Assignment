@@ -45,17 +45,37 @@ const student = {
 //!======================================
 // Nested Objects (Object of Objects)
 
-const classInfo = {
-    Shankar: {
+// const classInfo = {
+//     Shankar: {
+//         grade: "A+",
+//         city: "Mumbai"
+//     },
+//     Sneha: {
+//         grade: "A",
+//         city: "Delhi"
+//     },
+//     Sagar: {
+//         grade: "A+",
+//         city: "Mumbai"
+//     }
+// };
+
+// Nested Objects ( Array of Objects)
+
+const classInfo = [
+    {
+        name: "Shankar",
         grade: "A+",
         city: "Mumbai"
     },
-    Sneha: {
+    {
+        name: "Sneha",
         grade: "A",
         city: "Delhi"
     },
-    Sagar: {
+    {
+        name: "Sagar",
         grade: "A+",
         city: "Mumbai"
     }
-};
+];
