@@ -26,7 +26,7 @@
 // 3) Change the marks to "A"
 
 const student = {
-    name : "Shankar",
+    name: "Shankar",
     age: 23,
     marks: 94.4,
     city: "Delhi"
@@ -41,3 +41,21 @@ const student = {
 // for delete 
 // ?delete Object.key
 //delete student.marks
+
+//!======================================
+// Nested Objects (Object of Objects)
+
+const classInfo = {
+    Shankar: {
+        grade: "A+",
+        city: "Mumbai"
+    },
+    Sneha: {
+        grade: "A",
+        city: "Delhi"
+    },
+    Sagar: {
+        grade: "A+",
+        city: "Mumbai"
+    }
+};
