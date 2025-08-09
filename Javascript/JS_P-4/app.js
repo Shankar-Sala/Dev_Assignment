@@ -30,13 +30,53 @@
 // ! ==============================
 // ? Print the multiplication table for 5.
 
-let n = prompt("write your number"); //string
-n = parseInt(n); // convert a string into an integer.
+//? method-1
+// let n = prompt("write your number"); //string
+// n = parseInt(n); // convert a string into an integer.
 
-for(let i=n; i<=n*10; i=i+n){
-    console.log(i);
-}
+//? method-2
+// for(let i=n; i<=n*10; i=i+n){
+//     console.log(i);
+// }
 
 // for (let i = 5; i <= 50; i= i+5) {
 //        console.log(i);
 // }
+
+// !=======================================
+// for(let i=1; i<=3; i++){
+//     console.log(`Outer Loop ${i}`);
+//     for(let j=1; j<=3; j++){
+//         console.log(j);
+//     }
+// }
+
+// !===================================
+// ?While loop
+
+// let i=5;
+
+// while(i>=1){
+//     console.log(i);
+//     i--;
+// }
+
+// let i = 0;
+// while (i <= 20) {
+//     console.log(i);
+//     i++;
+// }
+
+
+// ? Favorite Movie
+
+let favMovie = "mahavatar narsimha"
+let guess = prompt("Enter Your FavMovie Name");
+while ((guess != favMovie) && (guess != "quit")) {
+    guess = prompt("wrong guess. Please try again");
+}
+
+if(guess == favMovie){
+    console.log("congrats!!");
+}
+
