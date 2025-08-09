@@ -70,13 +70,42 @@
 
 // ? Favorite Movie
 
-let favMovie = "mahavatar narsimha"
-let guess = prompt("Enter Your FavMovie Name");
-while ((guess != favMovie) && (guess != "quit")) {
-    guess = prompt("wrong guess. Please try again");
-}
+// let favMovie = "mahavatar narsimha"
+// let guess = prompt("Enter Your FavMovie Name");
+// while ((guess != favMovie) && (guess != "quit")) {
+//     guess = prompt("wrong guess. Please try again");
+// }
 
-if(guess == favMovie){
-    console.log("congrats!!");
-}
+// if(guess == favMovie){
+//     console.log("congrats!!");
+// }
 
+// !==================================
+// let fruits = ["mango","apple","banana","orange", "litchi"];
+
+// for(let i=1; i<fruits.length; i++){
+//     console.log(i, fruits[i]);
+// }
+
+//?===========================================
+// let heroes = [
+//     ["ironman", "Spiderman", "Thor"], ["Superman", "Wonder women", "flash"]
+// ]
+
+// for (let i = 0; i < heroes.length; i++) {
+//     console.log(i, heroes[i], heroes[i].length);
+//     for (let j = 0; j < heroes[i].length; j++) {
+//         console.log(`j=${j}, ${heroes[i][j]}`);
+//     }
+// }
+
+//?======================================
+
+let student = [["shankar",99], ["Sneha",98.4],["shradha",100]];
+
+for(let i=0; i<student.length; i++){
+    console.log(`info of student #${i+1}`);
+    for(let j=0; j<student[i].length; j++){
+        console.log(student[i][j]);
+    }
+}
