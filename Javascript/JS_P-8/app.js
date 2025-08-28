@@ -159,9 +159,22 @@
 //   id: 123
 // };
 
-function sum(...args){
-    for(let i=0; i<args.length; i++){
-        console.log("you gave us: ", args[i]);
-        
-    }
-}
+// function sum(...args){
+//     for(let i=0; i<args.length; i++){
+//         console.log("you gave us: ", args[i]);
+
+//     }
+// }
+
+//! Destructuring(Objects)
+const student = {
+  name: "karan",
+  age: 14,
+  class: 9,
+  subject: ["hindi", "english", "Marathi", "Science"],
+  username: "shankar@123",
+  password: "abcd",
+  city: "Pune",
+};
+
+let { username: user, password: secret, city: place = "Mumbai" } = student;
